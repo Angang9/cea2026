@@ -109,7 +109,7 @@ nav { margin-left: auto; }
 }
 
 
-/* Submenú */
+/* submenu */
 .submenu-parent { position: relative; }
 
 .submenu {
@@ -140,7 +140,7 @@ nav { margin-left: auto; }
 
 .submenu-parent:hover .submenu { display: block; }
 
-/* Botón de inscripciones */
+/* Booton de inscripciones */
 .btn-inscripcion {
   background-color: var(--verde-lima);
  color: #003366;
@@ -177,7 +177,7 @@ font-weight: 550;
   position: absolute;
   inset: 0;
   opacity: 0;
-  transition: opacity 1s ease-in-out;
+  transition: opacity 2s ease-in-out;
 }
 
 
@@ -217,7 +217,6 @@ font-weight: 550;
     cursor: pointer;
   padding: 10px 15px;
   border-radius: 50%; 
-  transition: background 0.3s;
   z-index: 10;
 }
 

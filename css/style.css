@@ -225,6 +225,11 @@ font-weight: 550;
 .next { right: 20px; }
 
 
+.slide:nth-child(2) img,
+.slide:nth-child(3) img {
+  object-position: center 65%;
+}
+
 
 
 @media (max-width: 768px) {

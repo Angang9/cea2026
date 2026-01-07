@@ -33,7 +33,7 @@ if (form) {
 const slides = document.querySelectorAll(".slide");
 if (slides.length > 0) {
   let current = 0;
-  let interval = setInterval(nextSlide, 7000);
+  let interval = setInterval(nextSlide, 9000);
 
   const nextBtn = document.querySelector(".next");
   const prevBtn = document.querySelector(".prev");

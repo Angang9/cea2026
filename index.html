@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Complejo Educativo Alberdi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+
+<body>
+  <!-- HEADER -->
+<header>
+  <div class="top-bar"></div>
+  <div class="container header-main">
+    <div class="logo-area">
+      <img src="img/logo.png" alt="Logo" class="logo">
+      <h1 class="nombre-escuela">Complejo Educativo<br>De Alberdi</h1>
+    </div>
+    <button id= "abrir" class="abrir-menu"> <i class="bi bi-list"></i></button>
+      
+    <nav class="nav" id="nav">
+      <button id="cerrar" class="cerrar-menu"> <i class="bi bi-x-lg"></i></button>
+      <ul class="nav-links">
+        <li><a href="index.html">Nosotros</a></li>
+
+      <li class="submenu-parent">
+  <a href="#">Proyecto Educativo ▾</a>
+  <ul class="submenu">
+    <li><a href="nivel-inicial.html">Nivel Inicial</a></li>
+    <li><a href="nivel-primario.html">Nivel Primario</a></li>
+    <li><a href="nivel-secundario.html">Nivel Secundario</a></li>
+  </ul>
+</li>
+
+
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#inscripciones" class="btn-inscripcion">Inscripciones</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+
+
+  <!-- hero con carrusel -->
+<section id="hero">
+  <div class="hero-slider">
+    <div class="slide active">
+      <img src="img/hero1.jpg" alt="Primera imagen">
+      <div class="hero-texto">
+        <p>
+          Nuestra misión es brindar una educación integral y humana que despierte el amor por el aprendizaje y el compromiso con los demás. Formamos personas con valores, sensibilidad y pensamiento crítico; estudiantes curiosos, inteligentes,  y capaces de transformar su entorno con empatía y responsabilidad.
+        </p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="img/hero2.jpg" alt="Segunda imagen">
+    </div>
+    <div class="slide">
+      <img src="img/hero3.jpg" alt="Tercera imagen">
+    </div>
+
+    <!-- Botones -->
+    <button class="arrow prev">&#10094;</button>
+    <button class="arrow next">&#10095;</button>
+  </div>
+</section>
+
+
+
+
+<!-- Niveles -->
+<section id="niveles" class="section bg-light">
+  <div class="container">
+    <h2>Niveles Educativos</h2>
+    <div class="niveles-grid">
+
+      <a href="nivel-inicial.html" class="nivel">
+        <img src="img/icono_inicial.png" alt="Icono Nivel Inicial">
+        <h3>Nivel Inicial</h3>
+      </a>
+
+      <a href="nivel-primario.html" class="nivel">
+        <img src="img/icono_primario.png" alt="Icono Nivel Primario">
+        <h3>Nivel Primario</h3>
+      </a>
+
+      <a href="nivel-secundario.html" class="nivel">
+        <img src="img/icono_secundario.png" alt="Icono Nivel Secundario">
+        <h3>Nivel Secundario</h3>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="contacto-section" id="contacto">
+  <div class="contacto-container">
+
+    <div class="formulario">
+      <h2>Contactanos</h2>
+
+      <form action="https://formspree.io/f/mrbyozag" method="POST">
+        <div class="campo">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div class="campo">
+          <label for="apellido">Apellido</label>
+          <input type="text" id="apellido" name="apellido" required>
+        </div>
+
+        <div class="campo">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="campo">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="message" required></textarea>
+        </div>
+
+        <button type="submit" class="btn-enviar">Enviar</button>
+      </form>
+
+      <p id="form-status" class="form-status"></p>
+    </div>
+
+    <div class="mapa">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.951066918622!2d-60.690667!3d-32.899462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b65376c8f77071%3A0xf18f1e48827fe02b!2sComplejo%20Educativo%20de%20Alberdi!5e0!3m2!1ses-419!2sar!4v1760117830503!5m2!1ses-419!2sar"
+        width="100%" height="300"style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+  </div>
+</section>
+
+
+
+<section id="seperador blanco">
+ <div class="backgroundd">
+
+<span style="background:#ffffff"></span>
+
+ </div>
+
+
+
+
+</section>
+  
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Complejo Educativo De Alberdi | Dirección: Blvd. Rondeau 1450 | Telefono: (341)4542492</p>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+<script src="js/script.js" defer></script>
+
+</body>
+
+
+<!-- wpp -->
+<a href="https://wa.me/5493410000000"  class="whatsapp-float"  target="_blank"  aria-label="Chatear por WhatsApp">
+   <div class="whatsapp-icon">  <i class="bi bi-whatsapp"></i> </div>
+   <span class="whatsapp-text">¡Escribinos!</span>
+</a>
+
+</html>

@@ -692,9 +692,21 @@ font-size: 1.1rem;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
 }
 
+@media (max-width: 768px) {
+  .primaria-contenido {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .primaria {
+    padding: 60px 6%;
+  }
+  .primaria-texto h2 {
+    font-size: 1.6rem;
+  }
 
+  
 
-
+}
 
 .abrir-menu,
 .cerrar-menu { display: none; }
@@ -1562,44 +1574,33 @@ header {
 }
 @media (max-width: 768px){
 
-  /* Compensa el header fijo (75px) para que no quede “mal distribuido” */
   body{
     padding-top: 75px;
   }
-
-  /* HERO de secundaria más compacto (opcional) */
   .hero-portada .hero-img{
-    height: 220px; /* antes 250, si querés más chico */
+    height: 220px;
   }
-
-  /* SECCIÓN SECUNDARIA: menos aire */
   .nivel-secundario{
-    padding: 18px 0 !important;  /* menos alto */
+    padding: 18px 0 !important; 
   }
-
   .secundario-container{
-    gap: 12px !important;        /* antes 50px */
+    gap: 12px !important;        
     padding: 0 16px !important;
     align-items: flex-start !important;
   }
-
   .secundario-texto h2{
     margin-bottom: 10px !important;
   }
-
   .secundario-texto ul{
     margin: 0 !important;
     padding: 0 !important;
-    list-style: none !important; /* como ya tenés */
+    list-style: none !important; 
     font-size: 0.95rem !important;
     line-height: 1.5 !important;
   }
-
   .secundario-texto li + li{
     margin-top: 8px !important;
   }
-
-  /* Como NO estás usando imagen en secundaria, sacamos ese bloque para que no meta espacio */
   .secundario-imagen{
     display: none !important;
   }

@@ -307,6 +307,113 @@ text-decoration: none;
 }
 
 
+.acuerdo-container h2 {
+
+align-items: center;
+
+}
+/* ==========================
+   ACUERDO DE PERMANENCIA
+========================== */
+.acuerdo-section {
+  background: #f5f6fa;
+  padding: 70px 0;
+}
+
+.acuerdo-container {
+  width: 85%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.acuerdo-container h2 {
+  color: var(--azul-oscuro);
+  font-size: 1.8rem;
+  margin-bottom: 14px;
+  border-bottom: 4px solid var(--verde-lima);
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+.acuerdo-bajada {
+  color: #4b4f77;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin: 12px 0 22px;
+}
+
+.acuerdo-card {
+  background: white;
+  border-radius: 14px;
+  padding: 22px 24px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  border-left: 6px solid var(--verde-lima);
+  margin-bottom: 28px;
+}
+
+.acuerdo-card p {
+  color: #2d2f3a;
+  line-height: 1.75;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.acuerdo-card p:last-child { margin-bottom: 0; }
+
+.acuerdo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 22px;
+}
+
+.acuerdo-box {
+  background: white;
+  border-radius: 14px;
+  padding: 18px 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.acuerdo-box h3 {
+  color: var(--azul-oscuro);
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  border-bottom: 2px solid var(--verde-lima);
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.acuerdo-box ul {
+  margin-left: 18px;
+  color: #2d2f3a;
+  line-height: 1.7;
+  font-size: 0.98rem;
+}
+
+.acuerdo-nota {
+  background: rgba(197, 250, 210, 0.45);
+  border: 1px solid rgba(197, 250, 210, 0.9);
+  color: var(--azul-oscuro);
+  border-radius: 12px;
+  padding: 14px 16px;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .acuerdo-section { padding: 55px 0; }
+
+  .acuerdo-container h2 { font-size: 1.55rem; }
+
+  .acuerdo-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
 
 /*footer */
 footer {
@@ -978,7 +1085,7 @@ header {
 .nivel-secundario {
   background-color: #0e1664; 
   color: white;
-  padding: 60px 0;
+  padding: 20px 0;
 }
 
 .secundario-container {
@@ -993,11 +1100,11 @@ header {
 }
 
 .secundario-texto {
-  flex: 1 1 500px;
+  flex: 1 1 300px;
 }
 
 .secundario-texto h2 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 20px;
   border-left: 6px solid var(--verde-lima);
@@ -1007,7 +1114,7 @@ header {
 .secundario-texto ul {
   list-style: disc;
   margin-left: 25px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.7;
 }
 

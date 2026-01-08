@@ -113,3 +113,13 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => (status.textContent = ""), 6000);
   });
 });
+
+
+//acuerdo/
+
+  const toggled = document.querySelector(".acuerdo-toggle");
+  const section = document.querySelector(".acuerdo-section");
+
+  toggled.addEventListener("click", () => {
+    section.classList.toggle("abierto");
+  });

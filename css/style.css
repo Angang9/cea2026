@@ -399,6 +399,67 @@ align-items: center;
   line-height: 1.6;
 }
 
+.acuerdo-toggle {
+  width: 100%;
+  background-color: var(--azul-oscuro);
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 18px 25px;
+  border: none;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  transition: background 0.3s ease;
+}
+
+.acuerdo-toggle:hover {
+  background-color: var(--azul-claro);
+}
+
+.flecha {
+  font-size: 1.8rem;
+  transition: transform 0.3s ease;
+}
+
+/* Contenido oculto */
+.acuerdo-contenido {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease, opacity 0.4s ease;
+  opacity: 0;
+  margin-top: 15px;
+}
+
+/* Cuando está abierto */
+.acuerdo-section.abierto .acuerdo-contenido {
+  max-height: 3000px; /* grande para que entre todo */
+  opacity: 1;
+}
+
+.acuerdo-section.abierto .flecha {
+  transform: rotate(45deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Responsive */
 @media (max-width: 768px) {
   .acuerdo-section { padding: 55px 0; }
@@ -875,6 +936,36 @@ header {
   transform: scale(1.03);
   box-shadow: 0 8px 18px rgba(0,0,0,0.2);
 }
+.grados {
+  list-style: none;
+  padding-left: 0;
+}
+
+.grados > li {
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.cursos {
+  list-style: none;
+  padding-left: 20px;
+  margin-top: 6px;
+}
+
+.cursos li {
+  font-weight: 400;
+  margin: 4px 0;
+}
+
+.cursos a {
+  text-decoration: none;
+  color: #1a4cff;
+}
+
+.cursos a:hover {
+  text-decoration: underline;
+}
+
 
 /* Adaptación móvil */
 @media (max-width: 768px) {
@@ -1099,6 +1190,21 @@ header {
   padding: 0 20px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .secundario-texto {
   flex: 1 1 300px;
 }
@@ -1163,6 +1269,9 @@ header {
   .secundario-imagen img {
     max-width: 90%;
   }
+
+
+  
 }
 
 /* info util */
@@ -1186,6 +1295,89 @@ header {
   display: inline-block;
   padding-bottom: 8px;
 }
+
+/* IG FLOTANTE */
+.instagram-float {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af, #515bd4);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 10px 18px;
+  border-radius: 50px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.instagram-float:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+  background: linear-gradient(135deg, #fd5949, #d6249f, #285AEB);
+}
+
+.instagram-icon {
+  background-color: #fff;
+  color: #d6249f;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+
+.instagram-float:hover .instagram-icon {
+  background-color: #fff;
+  transform: rotate(12deg);
+}
+
+.instagram-text {
+  letter-spacing: 0.3px;
+}
+
+/* Mobile: solo ícono */
+@media (max-width: 768px) {
+  .instagram-float {
+    gap: 0;
+    padding: 12px;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    justify-content: center;
+  }
+
+  .instagram-icon {
+    box-shadow: none;
+  }
+
+  .instagram-text {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* GRID DE TARJETAS */
 .info-grid {

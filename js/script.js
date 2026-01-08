@@ -75,11 +75,6 @@ document.addEventListener("DOMContentLoaded", () => {
       showSlide(current);
     }
 
-    function resetInterval() {
-      clearInterval(interval);
-      interval = setInterval(nextSlide, 8000);
-    }
-
     if (nextBtn) nextBtn.addEventListener("click", () => { nextSlide(); resetInterval(); });
     if (prevBtn) prevBtn.addEventListener("click", () => { prevSlide(); resetInterval(); });
   }

@@ -237,27 +237,36 @@ font-weight: 550;
 
 @media (max-width: 768px) {
   .hero-slider {
-    height: clamp(400px, 80vw, 250px);
-  }
-
-  .slide img {
-    object-fit: cover;
-    object-position: center 40%;
+    height: 420px; 
   }
 
   .hero-slider .hero-texto {
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    bottom:120px;
     top: auto;
-    bottom: 8%;
-    right: 11%;
-    left: 25%;
     transform: none;
-    max-width: 45%;
-    font-size: 0.9rem;
-    padding: 15px 15px;
-    background-color: var(--verde-lima)
-  }
 
-  .arrow { display: none; }
+    max-width: none;
+    width: auto;
+
+    font-size: 0.95rem;
+    line-height: 1.35;
+    padding: 14px 14px;
+
+    border-radius: 12px;
+
+   
+    max-height: 55%;
+    overflow: auto;
+  }
+.arrow {
+
+  display:none;
+}
+
+
 }
 
 /*secciones*/
@@ -312,9 +321,7 @@ text-decoration: none;
 align-items: center;
 
 }
-/* ==========================
-   ACUERDO DE PERMANENCIA
-========================== */
+
 .acuerdo-section {
   background: #f5f6fa;
   padding: 70px 0;
@@ -1008,8 +1015,6 @@ header {
 
 
 
-
-
 }
 
 /* WPP FLOTANTE */
@@ -1198,19 +1203,6 @@ header {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .secundario-texto {
   flex: 1 1 300px;
 }
@@ -1351,7 +1343,7 @@ header {
   letter-spacing: 0.3px;
 }
 
-/* Mobile: solo ícono */
+
 @media (max-width: 768px) {
   .instagram-float {
     gap: 0;

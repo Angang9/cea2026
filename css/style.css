@@ -1601,7 +1601,66 @@ header {
   .secundario-texto li + li{
     margin-top: 8px !important;
   }
-  .secundario-imagen{
-    display: none !important;
-  }
 }
+
+
+
+
+
+
+
+.tabla-horarios {
+  font-size: 0.8rem;
+  width: 100%;
+  max-width: 720px;
+  margin: 25px auto;
+  overflow-x: auto; /* responsive */
+}
+
+.tabla-horarios table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 520px;
+  font-weight: 600;
+}
+
+.tabla-horarios th,
+.tabla-horarios td {
+  border: 2px solid #000;
+  padding: 8px 10px;
+  text-align: center;
+  background: #fff;
+}
+
+.tabla-horarios thead th {
+  background: #fff;
+  font-weight: 800;
+}
+
+.tabla-horarios .turno {
+  font-weight: 800;
+  color: #000;
+}
+
+.tabla-horarios .manana {
+  background: #ffffff;
+}
+
+.tabla-horarios .tarde {
+  background: #0e1664; 
+  color: #fff;
+}
+
+.tabla-horarios .separador td {
+  height: 10px;
+  background: #0e1664;
+  border: 0;
+}
+
+/* bajar la foto de secundaria */
+.hero-nivel-container img:nth-child(1) {
+  object-position: center 10%;
+}
+
+
+

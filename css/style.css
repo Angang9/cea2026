@@ -1721,3 +1721,47 @@ header {
   }
 }
 
+/* ✅ 1) Evita que la página se “estire” hacia los costados */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* ✅ 2) Asegura que nada (imgs/iframes/sections) sea más ancho que la pantalla */
+img, iframe, section, div {
+  max-width: 100%;
+}
+
+/* ✅ 3) MAPA: que nunca se pase */
+.mapa iframe {
+  width: 100% !important;
+  max-width: 100% !important;
+  display: block;
+}
+
+/* ✅ 4) TARJETA DEL MAIL: que no se salga y tenga buen padding en mobile */
+.emails {
+  width: 100%;
+  max-width: 520px;        /* en desktop se ve prolijo */
+  margin: 18px auto 0;     /* centrado */
+  padding: 18px 16px;
+  border-radius: 18px;
+  box-sizing: border-box;
+}
+
+/* ✅ 5) Si algún texto largo (mail/link) empuja el ancho, esto lo corta bien */
+.emails p, .emails a {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+/* ✅ 6) Ajuste extra SOLO en celular */
+@media (max-width: 768px) {
+  .contacto-container {
+    padding: 0 14px;
+  }
+
+  .emails {
+    max-width: 100%;
+  }
+}

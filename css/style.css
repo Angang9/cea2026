@@ -953,10 +953,7 @@ header {
   transform: scale(1.03);
   box-shadow: 0 8px 18px rgba(0,0,0,0.2);
 }
-.grados {
-  list-style: none;
-  padding-left: 0;
-}
+
 
 .grados > li {
   margin-bottom: 12px;
@@ -965,8 +962,6 @@ header {
 
 .cursos {
   list-style: none;
-  padding-left: 20px;
-  margin-top: 6px;
 }
 
 .cursos li {
@@ -989,8 +984,25 @@ header {
 }
 
 
+.grados a {
+
+  text-decoration: none;
+  color: #1a4cff;
+}
+
+.certificados a{
+  text-decoration: none;
+  color: #1a4cff;
+
+}
 
 
+.materiales a {
+
+ text-decoration: none;
+  color: #1a4cff;
+  
+}
 
 /* Adaptación móvil */
 @media (max-width: 768px) {
